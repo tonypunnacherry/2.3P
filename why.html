@@ -81,7 +81,7 @@
     var acc = document.getElementsByClassName("accordion");
 var i;
     
-    for(var item in document.getElementsByClassName("active")) {
+    for(var item of document.querySelectorAll(".accordion.active")) {
     var panel = item.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
